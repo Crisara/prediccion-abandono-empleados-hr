@@ -26,6 +26,24 @@ El proyecto sigue un flujo de trabajo estándar:
 * Se identificaron ciertas categorías de `JobRole` (ej. Sales Representative), `MaritalStatus` (Soltero), bajo `JobInvolvement` y bajos niveles de `JobLevel` como factores asociados a una mayor tasa de abandono.
 * Variables como la `DistanceFromHome` y `YearsWithCurrManager` también mostraron distribuciones distintas entre los empleados que abandonaron y los que no.
 
+**Distribución de Abandono por Variables Categóricas Clave:**
+
+![Abandono por JobRole](Imagenes/JobRole.png)
+![Abandono por MaritalStatus](Imagenes/MaritalStatus.png)
+![Abandono por JobInvolvement](Imagenes/JobInvolvement.png)
+![Abandono por JobLevel](Imagenes/JobLevel.png)
+
+**Distribución de Variables Numéricas Clave vs. Abandono:**
+
+![Distribución de Distancia del Hogar](Imagenes/Distancia_empresa.png)
+![Distribución de Años con Gerente Actual](Imagenes/Años_Gerente.png)
+![Distribución de Años Trabajando en Total](Imagenes/Años_Trabajo_Total.png)
+
+**Matriz de Correlación de Variables Numéricas:**
+
+![Matriz de Correlación](Imagenes/Co.png)
+
+
 ## Resultados del Modelo
 
 El modelo de Regresión Logística alcanzó una precisión general del 90%. Sin embargo, debido al marcado desbalance en las clases del dataset, la capacidad del modelo para identificar correctamente los casos positivos (empleados que abandonan) fue limitada, como se refleja en un bajo valor de `recall` (0.40) para la clase de abandono.
